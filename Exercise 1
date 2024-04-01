@@ -1,0 +1,17 @@
+def getValues(n):
+  weights = []
+  for i in range(n):
+    weight = float(input('Enter a weight'))
+    weights.append(weight)
+  return weights [2:]
+
+def calcAverage(alist):
+  if len(alist) < 1:
+    print('Not enough elements')
+  else:
+    print(sum(alist)/len(alist))
+
+n_weights = int(input('Enter number of weights: '))
+L = getValues(n_weights)
+avg = calcAverage(L)
+print(avg)
